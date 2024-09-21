@@ -90,7 +90,7 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     try{
-        const  personId = req.params.id; // Extract the person's ID fron the URL parameter
+        const  personId = req.params.id; // Extract the person's ID from the URL parameter
 
         // Assuming you have a Person model
         const response = await Person.findByIdAndDelete(personId);
